@@ -32,7 +32,8 @@
             this.textBox_password = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonEnter = new System.Windows.Forms.Button();
+            this.signuplink = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // textBox_login
@@ -72,16 +73,30 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Пароль";
             // 
-            // button1
+            // buttonEnter
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(213, 277);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 39);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "ВОЙТИ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonEnter.BackColor = System.Drawing.Color.Turquoise;
+            this.buttonEnter.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEnter.Location = new System.Drawing.Point(213, 277);
+            this.buttonEnter.Name = "buttonEnter";
+            this.buttonEnter.Size = new System.Drawing.Size(131, 39);
+            this.buttonEnter.TabIndex = 4;
+            this.buttonEnter.Text = "ВОЙТИ";
+            this.buttonEnter.UseVisualStyleBackColor = false;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
+            // 
+            // signuplink
+            // 
+            this.signuplink.AutoSize = true;
+            this.signuplink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.signuplink.LinkColor = System.Drawing.Color.DarkSlateGray;
+            this.signuplink.Location = new System.Drawing.Point(165, 336);
+            this.signuplink.Name = "signuplink";
+            this.signuplink.Size = new System.Drawing.Size(223, 25);
+            this.signuplink.TabIndex = 5;
+            this.signuplink.TabStop = true;
+            this.signuplink.Text = "Зарегистрироваться";
+            this.signuplink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signuplink_LinkClicked);
             // 
             // log_in
             // 
@@ -89,7 +104,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(565, 430);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.signuplink);
+            this.Controls.Add(this.buttonEnter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_password);
@@ -107,6 +123,7 @@
         private System.Windows.Forms.TextBox textBox_password;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonEnter;
+        private System.Windows.Forms.LinkLabel signuplink;
     }
 }

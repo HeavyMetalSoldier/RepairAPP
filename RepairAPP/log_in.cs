@@ -28,6 +28,15 @@ namespace RepairAPP
             textBox_password.PasswordChar = '*';
         }
 
+      
+
+        private void signuplink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            sign_up formsign = new sign_up();
+            formsign.Show();
+            this.Hide();
+        }
+
         private void buttonEnter_Click(object sender, EventArgs e)
         {
             var UserLogin = textBox_login.Text;
@@ -44,22 +53,15 @@ namespace RepairAPP
             if (dataTable.Rows.Count == 1)
             {
                 MessageBox.Show("Вы успешно вошли");
-                FormMain form1 = new FormMain();
+                FormMain formMain = new FormMain();
                 this.Hide();
-                form1.ShowDialog();
+                formMain.ShowDialog();
                 this.Show();
             }
             else
             {
                 MessageBox.Show("Введен неправильный логин или пароль");
             }
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            sign_up formsign = new sign_up();
-            formsign.Show();
-            this.Hide();
         }
     }
 }
