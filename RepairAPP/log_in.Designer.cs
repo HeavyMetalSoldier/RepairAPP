@@ -90,7 +90,7 @@
             this.signuplink.AutoSize = true;
             this.signuplink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.signuplink.LinkColor = System.Drawing.Color.DarkSlateGray;
-            this.signuplink.Location = new System.Drawing.Point(165, 336);
+            this.signuplink.Location = new System.Drawing.Point(160, 334);
             this.signuplink.Name = "signuplink";
             this.signuplink.Size = new System.Drawing.Size(223, 25);
             this.signuplink.TabIndex = 5;
@@ -111,7 +111,7 @@
             this.Controls.Add(this.textBox_password);
             this.Controls.Add(this.textBox_login);
             this.Name = "log_in";
-            this.Text = "Form2";
+            this.Text = "Авторизация";
             this.ResumeLayout(false);
             this.PerformLayout();
 
