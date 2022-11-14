@@ -73,7 +73,7 @@
             // 
             // buttonEnter2
             // 
-            this.buttonEnter2.BackColor = System.Drawing.Color.Turquoise;
+            this.buttonEnter2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(250)))), ((int)(((byte)(207)))));
             this.buttonEnter2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEnter2.Location = new System.Drawing.Point(164, 277);
             this.buttonEnter2.Name = "buttonEnter2";
