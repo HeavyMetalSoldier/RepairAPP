@@ -28,20 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle106 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle107 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle108 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageOrders = new System.Windows.Forms.TabPage();
+            this.label24 = new System.Windows.Forms.Label();
+            this.Order_textBox_Search = new System.Windows.Forms.TextBox();
+            this.Order_button_Clear = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Order_button_Refresh = new System.Windows.Forms.Button();
+            this.Order_button_Save = new System.Windows.Forms.Button();
+            this.Order_button_Alter = new System.Windows.Forms.Button();
+            this.Order_button_Delete = new System.Windows.Forms.Button();
+            this.Order_button_New = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,7 +69,19 @@
             this.Order_textBox_ID = new System.Windows.Forms.TextBox();
             this.Orders_dataGridView = new System.Windows.Forms.DataGridView();
             this.tabPageClient = new System.Windows.Forms.TabPage();
+            this.label25 = new System.Windows.Forms.Label();
+            this.Client_textBox_Search = new System.Windows.Forms.TextBox();
+            this.Client_button_Clear = new System.Windows.Forms.Button();
+            this.Client_button_Refresh = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Client_button_Save = new System.Windows.Forms.Button();
+            this.Client_button_Alter = new System.Windows.Forms.Button();
+            this.Client_button_Delete = new System.Windows.Forms.Button();
+            this.Client_button_New = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.Client_textBox_Telephone = new System.Windows.Forms.TextBox();
             this.Client_textBox_Adress = new System.Windows.Forms.TextBox();
@@ -67,17 +89,31 @@
             this.Client_textBox_ID = new System.Windows.Forms.TextBox();
             this.Client_dataGridView = new System.Windows.Forms.DataGridView();
             this.tabPageServ = new System.Windows.Forms.TabPage();
-            this.Serv_dataGridView = new System.Windows.Forms.DataGridView();
-            this.tabPageDocument = new System.Windows.Forms.TabPage();
-            this.Document_dataGridView = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.Serv_textBox_Search = new System.Windows.Forms.TextBox();
+            this.Serv_button_Clear = new System.Windows.Forms.Button();
+            this.Serv_button_Refresh = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Serv_button_Save = new System.Windows.Forms.Button();
+            this.Serv_button_Alter = new System.Windows.Forms.Button();
+            this.Serv_button_Delete = new System.Windows.Forms.Button();
+            this.Serv_button_New = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1111 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.Serv_textBox_Price = new System.Windows.Forms.TextBox();
             this.Serv_textBox_ServiceName = new System.Windows.Forms.TextBox();
+            this.Serv_dataGridView = new System.Windows.Forms.DataGridView();
+            this.tabPageDocument = new System.Windows.Forms.TabPage();
+            this.label27 = new System.Windows.Forms.Label();
+            this.Document_textBox_Search = new System.Windows.Forms.TextBox();
+            this.Document_button_Clear = new System.Windows.Forms.Button();
+            this.Document_button_Refresh = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.Document_button_Save = new System.Windows.Forms.Button();
+            this.Document_button_Alter = new System.Windows.Forms.Button();
+            this.Document_button_Delete = new System.Windows.Forms.Button();
+            this.Document_button_New = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -91,6 +127,7 @@
             this.Document_textBox_ClientName = new System.Windows.Forms.TextBox();
             this.Document_textBox_ClientID = new System.Windows.Forms.TextBox();
             this.Document_textBox_ID = new System.Windows.Forms.TextBox();
+            this.Document_dataGridView = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPageOrders.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -99,11 +136,11 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Client_dataGridView)).BeginInit();
             this.tabPageServ.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Serv_dataGridView)).BeginInit();
             this.tabPageDocument.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Document_dataGridView)).BeginInit();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Document_dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -121,6 +158,16 @@
             // tabPageOrders
             // 
             this.tabPageOrders.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.tabPageOrders.Controls.Add(this.label24);
+            this.tabPageOrders.Controls.Add(this.Order_textBox_Search);
+            this.tabPageOrders.Controls.Add(this.Order_button_Clear);
+            this.tabPageOrders.Controls.Add(this.label20);
+            this.tabPageOrders.Controls.Add(this.label11);
+            this.tabPageOrders.Controls.Add(this.Order_button_Refresh);
+            this.tabPageOrders.Controls.Add(this.Order_button_Save);
+            this.tabPageOrders.Controls.Add(this.Order_button_Alter);
+            this.tabPageOrders.Controls.Add(this.Order_button_Delete);
+            this.tabPageOrders.Controls.Add(this.Order_button_New);
             this.tabPageOrders.Controls.Add(this.panel1);
             this.tabPageOrders.Controls.Add(this.Orders_dataGridView);
             this.tabPageOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -130,6 +177,115 @@
             this.tabPageOrders.Size = new System.Drawing.Size(1072, 626);
             this.tabPageOrders.TabIndex = 0;
             this.tabPageOrders.Text = "Заказы";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label24.Location = new System.Drawing.Point(685, 13);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(65, 20);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "Поиск";
+            // 
+            // Order_textBox_Search
+            // 
+            this.Order_textBox_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Order_textBox_Search.Location = new System.Drawing.Point(756, 10);
+            this.Order_textBox_Search.Name = "Order_textBox_Search";
+            this.Order_textBox_Search.Size = new System.Drawing.Size(307, 27);
+            this.Order_textBox_Search.TabIndex = 10;
+            // 
+            // Order_button_Clear
+            // 
+            this.Order_button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(133)))), ((int)(((byte)(146)))));
+            this.Order_button_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Order_button_Clear.Location = new System.Drawing.Point(669, 373);
+            this.Order_button_Clear.Name = "Order_button_Clear";
+            this.Order_button_Clear.Size = new System.Drawing.Size(188, 42);
+            this.Order_button_Clear.TabIndex = 9;
+            this.Order_button_Clear.Text = "Очистить";
+            this.Order_button_Clear.UseVisualStyleBackColor = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Location = new System.Drawing.Point(8, 15);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(183, 25);
+            this.label20.TabIndex = 8;
+            this.label20.Text = "Таблица заказов";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(8, 15);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 25);
+            this.label11.TabIndex = 7;
+            // 
+            // Order_button_Refresh
+            // 
+            this.Order_button_Refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(133)))), ((int)(((byte)(146)))));
+            this.Order_button_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Order_button_Refresh.Location = new System.Drawing.Point(863, 373);
+            this.Order_button_Refresh.Name = "Order_button_Refresh";
+            this.Order_button_Refresh.Size = new System.Drawing.Size(200, 42);
+            this.Order_button_Refresh.TabIndex = 6;
+            this.Order_button_Refresh.Text = "Обновить";
+            this.Order_button_Refresh.UseVisualStyleBackColor = false;
+            this.Order_button_Refresh.Click += new System.EventHandler(this.Order_button_Refresh_Click);
+            // 
+            // Order_button_Save
+            // 
+            this.Order_button_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Order_button_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Order_button_Save.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Order_button_Save.Location = new System.Drawing.Point(669, 569);
+            this.Order_button_Save.Name = "Order_button_Save";
+            this.Order_button_Save.Size = new System.Drawing.Size(394, 45);
+            this.Order_button_Save.TabIndex = 5;
+            this.Order_button_Save.Text = "Сохранить";
+            this.Order_button_Save.UseVisualStyleBackColor = false;
+            // 
+            // Order_button_Alter
+            // 
+            this.Order_button_Alter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Order_button_Alter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Order_button_Alter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Order_button_Alter.Location = new System.Drawing.Point(669, 523);
+            this.Order_button_Alter.Name = "Order_button_Alter";
+            this.Order_button_Alter.Size = new System.Drawing.Size(394, 45);
+            this.Order_button_Alter.TabIndex = 4;
+            this.Order_button_Alter.Text = "Изменить";
+            this.Order_button_Alter.UseVisualStyleBackColor = false;
+            // 
+            // Order_button_Delete
+            // 
+            this.Order_button_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Order_button_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Order_button_Delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Order_button_Delete.Location = new System.Drawing.Point(669, 477);
+            this.Order_button_Delete.Name = "Order_button_Delete";
+            this.Order_button_Delete.Size = new System.Drawing.Size(394, 45);
+            this.Order_button_Delete.TabIndex = 3;
+            this.Order_button_Delete.Text = "Удалить";
+            this.Order_button_Delete.UseVisualStyleBackColor = false;
+            // 
+            // Order_button_New
+            // 
+            this.Order_button_New.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Order_button_New.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Order_button_New.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Order_button_New.Location = new System.Drawing.Point(669, 431);
+            this.Order_button_New.Name = "Order_button_New";
+            this.Order_button_New.Size = new System.Drawing.Size(394, 45);
+            this.Order_button_New.TabIndex = 2;
+            this.Order_button_New.Text = "Новая запись";
+            this.Order_button_New.UseVisualStyleBackColor = false;
+            this.Order_button_New.Click += new System.EventHandler(this.Order_button_New_Click);
             // 
             // panel1
             // 
@@ -225,51 +381,58 @@
             // 
             // Order_textBox_Progress
             // 
+            this.Order_textBox_Progress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Order_textBox_Progress.Location = new System.Drawing.Point(211, 193);
             this.Order_textBox_Progress.Name = "Order_textBox_Progress";
-            this.Order_textBox_Progress.Size = new System.Drawing.Size(413, 22);
+            this.Order_textBox_Progress.Size = new System.Drawing.Size(413, 24);
             this.Order_textBox_Progress.TabIndex = 6;
             // 
             // Order_textBox_Execution
             // 
+            this.Order_textBox_Execution.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Order_textBox_Execution.Location = new System.Drawing.Point(211, 165);
             this.Order_textBox_Execution.Name = "Order_textBox_Execution";
-            this.Order_textBox_Execution.Size = new System.Drawing.Size(413, 22);
+            this.Order_textBox_Execution.Size = new System.Drawing.Size(413, 24);
             this.Order_textBox_Execution.TabIndex = 5;
             // 
             // Order_textBox_OrderDate
             // 
+            this.Order_textBox_OrderDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Order_textBox_OrderDate.Location = new System.Drawing.Point(211, 137);
             this.Order_textBox_OrderDate.Name = "Order_textBox_OrderDate";
-            this.Order_textBox_OrderDate.Size = new System.Drawing.Size(413, 22);
+            this.Order_textBox_OrderDate.Size = new System.Drawing.Size(413, 24);
             this.Order_textBox_OrderDate.TabIndex = 4;
             // 
             // Order_textBox_Descript
             // 
+            this.Order_textBox_Descript.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Order_textBox_Descript.Location = new System.Drawing.Point(211, 109);
             this.Order_textBox_Descript.Name = "Order_textBox_Descript";
-            this.Order_textBox_Descript.Size = new System.Drawing.Size(413, 22);
+            this.Order_textBox_Descript.Size = new System.Drawing.Size(413, 24);
             this.Order_textBox_Descript.TabIndex = 3;
             // 
             // Order_textBox_ServiceName
             // 
+            this.Order_textBox_ServiceName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Order_textBox_ServiceName.Location = new System.Drawing.Point(211, 81);
             this.Order_textBox_ServiceName.Name = "Order_textBox_ServiceName";
-            this.Order_textBox_ServiceName.Size = new System.Drawing.Size(413, 22);
+            this.Order_textBox_ServiceName.Size = new System.Drawing.Size(413, 24);
             this.Order_textBox_ServiceName.TabIndex = 2;
             // 
             // Order_textBox_ClientID
             // 
+            this.Order_textBox_ClientID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Order_textBox_ClientID.Location = new System.Drawing.Point(211, 53);
             this.Order_textBox_ClientID.Name = "Order_textBox_ClientID";
-            this.Order_textBox_ClientID.Size = new System.Drawing.Size(413, 22);
+            this.Order_textBox_ClientID.Size = new System.Drawing.Size(413, 24);
             this.Order_textBox_ClientID.TabIndex = 1;
             // 
             // Order_textBox_ID
             // 
+            this.Order_textBox_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Order_textBox_ID.Location = new System.Drawing.Point(211, 25);
             this.Order_textBox_ID.Name = "Order_textBox_ID";
-            this.Order_textBox_ID.Size = new System.Drawing.Size(413, 22);
+            this.Order_textBox_ID.Size = new System.Drawing.Size(413, 24);
             this.Order_textBox_ID.TabIndex = 0;
             // 
             // Orders_dataGridView
@@ -277,42 +440,52 @@
             this.Orders_dataGridView.AllowUserToAddRows = false;
             this.Orders_dataGridView.AllowUserToDeleteRows = false;
             this.Orders_dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(250)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Orders_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle97.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle97.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle97.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle97.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle97.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle97.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle97.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Orders_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle97;
             this.Orders_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Orders_dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle98.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle98.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle98.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle98.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle98.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle98.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle98.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Orders_dataGridView.DefaultCellStyle = dataGridViewCellStyle98;
             this.Orders_dataGridView.Location = new System.Drawing.Point(8, 43);
             this.Orders_dataGridView.Name = "Orders_dataGridView";
             this.Orders_dataGridView.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Orders_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle99.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle99.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle99.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle99.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle99.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle99.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle99.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Orders_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle99;
             this.Orders_dataGridView.RowHeadersWidth = 51;
             this.Orders_dataGridView.RowTemplate.Height = 24;
             this.Orders_dataGridView.Size = new System.Drawing.Size(1055, 320);
             this.Orders_dataGridView.TabIndex = 0;
+            this.Orders_dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Orders_dataGridView_CellClick);
             // 
             // tabPageClient
             // 
             this.tabPageClient.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.tabPageClient.Controls.Add(this.label25);
+            this.tabPageClient.Controls.Add(this.Client_textBox_Search);
+            this.tabPageClient.Controls.Add(this.Client_button_Clear);
+            this.tabPageClient.Controls.Add(this.Client_button_Refresh);
+            this.tabPageClient.Controls.Add(this.label21);
+            this.tabPageClient.Controls.Add(this.Client_button_Save);
+            this.tabPageClient.Controls.Add(this.Client_button_Alter);
+            this.tabPageClient.Controls.Add(this.Client_button_Delete);
+            this.tabPageClient.Controls.Add(this.Client_button_New);
             this.tabPageClient.Controls.Add(this.panel2);
             this.tabPageClient.Controls.Add(this.Client_dataGridView);
             this.tabPageClient.Location = new System.Drawing.Point(4, 25);
@@ -321,6 +494,106 @@
             this.tabPageClient.Size = new System.Drawing.Size(1072, 626);
             this.tabPageClient.TabIndex = 1;
             this.tabPageClient.Text = "Клиенты";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.Location = new System.Drawing.Point(685, 13);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(65, 20);
+            this.label25.TabIndex = 14;
+            this.label25.Text = "Поиск";
+            // 
+            // Client_textBox_Search
+            // 
+            this.Client_textBox_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Client_textBox_Search.Location = new System.Drawing.Point(756, 10);
+            this.Client_textBox_Search.Name = "Client_textBox_Search";
+            this.Client_textBox_Search.Size = new System.Drawing.Size(307, 27);
+            this.Client_textBox_Search.TabIndex = 13;
+            // 
+            // Client_button_Clear
+            // 
+            this.Client_button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(133)))), ((int)(((byte)(146)))));
+            this.Client_button_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Client_button_Clear.Location = new System.Drawing.Point(669, 373);
+            this.Client_button_Clear.Name = "Client_button_Clear";
+            this.Client_button_Clear.Size = new System.Drawing.Size(188, 42);
+            this.Client_button_Clear.TabIndex = 12;
+            this.Client_button_Clear.Text = "Очистить";
+            this.Client_button_Clear.UseVisualStyleBackColor = false;
+            // 
+            // Client_button_Refresh
+            // 
+            this.Client_button_Refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(133)))), ((int)(((byte)(146)))));
+            this.Client_button_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Client_button_Refresh.Location = new System.Drawing.Point(863, 373);
+            this.Client_button_Refresh.Name = "Client_button_Refresh";
+            this.Client_button_Refresh.Size = new System.Drawing.Size(200, 42);
+            this.Client_button_Refresh.TabIndex = 11;
+            this.Client_button_Refresh.Text = "Обновить";
+            this.Client_button_Refresh.UseVisualStyleBackColor = false;
+            this.Client_button_Refresh.Click += new System.EventHandler(this.Client_button_Refresh_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.Location = new System.Drawing.Point(8, 15);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(199, 25);
+            this.label21.TabIndex = 10;
+            this.label21.Text = "Таблица клиентов";
+            // 
+            // Client_button_Save
+            // 
+            this.Client_button_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Client_button_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Client_button_Save.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Client_button_Save.Location = new System.Drawing.Point(669, 569);
+            this.Client_button_Save.Name = "Client_button_Save";
+            this.Client_button_Save.Size = new System.Drawing.Size(394, 45);
+            this.Client_button_Save.TabIndex = 9;
+            this.Client_button_Save.Text = "Сохранить";
+            this.Client_button_Save.UseVisualStyleBackColor = false;
+            // 
+            // Client_button_Alter
+            // 
+            this.Client_button_Alter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Client_button_Alter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Client_button_Alter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Client_button_Alter.Location = new System.Drawing.Point(669, 523);
+            this.Client_button_Alter.Name = "Client_button_Alter";
+            this.Client_button_Alter.Size = new System.Drawing.Size(394, 45);
+            this.Client_button_Alter.TabIndex = 8;
+            this.Client_button_Alter.Text = "Изменить";
+            this.Client_button_Alter.UseVisualStyleBackColor = false;
+            // 
+            // Client_button_Delete
+            // 
+            this.Client_button_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Client_button_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Client_button_Delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Client_button_Delete.Location = new System.Drawing.Point(669, 477);
+            this.Client_button_Delete.Name = "Client_button_Delete";
+            this.Client_button_Delete.Size = new System.Drawing.Size(394, 45);
+            this.Client_button_Delete.TabIndex = 7;
+            this.Client_button_Delete.Text = "Удалить";
+            this.Client_button_Delete.UseVisualStyleBackColor = false;
+            // 
+            // Client_button_New
+            // 
+            this.Client_button_New.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Client_button_New.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Client_button_New.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Client_button_New.Location = new System.Drawing.Point(669, 431);
+            this.Client_button_New.Name = "Client_button_New";
+            this.Client_button_New.Size = new System.Drawing.Size(394, 45);
+            this.Client_button_New.TabIndex = 6;
+            this.Client_button_New.Text = "Новая запись";
+            this.Client_button_New.UseVisualStyleBackColor = false;
+            this.Client_button_New.Click += new System.EventHandler(this.Client_button_New_Click);
             // 
             // panel2
             // 
@@ -338,6 +611,36 @@
             this.panel2.Size = new System.Drawing.Size(638, 234);
             this.panel2.TabIndex = 3;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(17, 137);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(169, 20);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Номер телефона";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(119, 109);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 20);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Адрес";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(134, 81);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 20);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "ФИО";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -350,30 +653,34 @@
             // 
             // Client_textBox_Telephone
             // 
+            this.Client_textBox_Telephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Client_textBox_Telephone.Location = new System.Drawing.Point(211, 137);
             this.Client_textBox_Telephone.Name = "Client_textBox_Telephone";
-            this.Client_textBox_Telephone.Size = new System.Drawing.Size(413, 22);
+            this.Client_textBox_Telephone.Size = new System.Drawing.Size(413, 24);
             this.Client_textBox_Telephone.TabIndex = 3;
             // 
             // Client_textBox_Adress
             // 
+            this.Client_textBox_Adress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Client_textBox_Adress.Location = new System.Drawing.Point(211, 109);
             this.Client_textBox_Adress.Name = "Client_textBox_Adress";
-            this.Client_textBox_Adress.Size = new System.Drawing.Size(413, 22);
+            this.Client_textBox_Adress.Size = new System.Drawing.Size(413, 24);
             this.Client_textBox_Adress.TabIndex = 2;
             // 
             // Client_textBox_FullName
             // 
+            this.Client_textBox_FullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Client_textBox_FullName.Location = new System.Drawing.Point(211, 81);
             this.Client_textBox_FullName.Name = "Client_textBox_FullName";
-            this.Client_textBox_FullName.Size = new System.Drawing.Size(413, 22);
+            this.Client_textBox_FullName.Size = new System.Drawing.Size(413, 24);
             this.Client_textBox_FullName.TabIndex = 1;
             // 
             // Client_textBox_ID
             // 
+            this.Client_textBox_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Client_textBox_ID.Location = new System.Drawing.Point(211, 53);
             this.Client_textBox_ID.Name = "Client_textBox_ID";
-            this.Client_textBox_ID.Size = new System.Drawing.Size(413, 22);
+            this.Client_textBox_ID.Size = new System.Drawing.Size(413, 24);
             this.Client_textBox_ID.TabIndex = 0;
             // 
             // Client_dataGridView
@@ -381,42 +688,52 @@
             this.Client_dataGridView.AllowUserToAddRows = false;
             this.Client_dataGridView.AllowUserToDeleteRows = false;
             this.Client_dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(250)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Client_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle100.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle100.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle100.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle100.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle100.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle100.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle100.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Client_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle100;
             this.Client_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Client_dataGridView.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle101.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle101.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle101.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle101.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle101.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle101.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle101.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Client_dataGridView.DefaultCellStyle = dataGridViewCellStyle101;
             this.Client_dataGridView.Location = new System.Drawing.Point(8, 43);
             this.Client_dataGridView.Name = "Client_dataGridView";
             this.Client_dataGridView.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Client_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle102.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle102.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle102.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle102.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle102.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle102.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle102.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Client_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle102;
             this.Client_dataGridView.RowHeadersWidth = 51;
             this.Client_dataGridView.RowTemplate.Height = 24;
             this.Client_dataGridView.Size = new System.Drawing.Size(1055, 320);
             this.Client_dataGridView.TabIndex = 2;
+            this.Client_dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Client_dataGridView_CellClick);
             // 
             // tabPageServ
             // 
             this.tabPageServ.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.tabPageServ.Controls.Add(this.label26);
+            this.tabPageServ.Controls.Add(this.Serv_textBox_Search);
+            this.tabPageServ.Controls.Add(this.Serv_button_Clear);
+            this.tabPageServ.Controls.Add(this.Serv_button_Refresh);
+            this.tabPageServ.Controls.Add(this.label22);
+            this.tabPageServ.Controls.Add(this.Serv_button_Save);
+            this.tabPageServ.Controls.Add(this.Serv_button_Alter);
+            this.tabPageServ.Controls.Add(this.Serv_button_Delete);
+            this.tabPageServ.Controls.Add(this.Serv_button_New);
             this.tabPageServ.Controls.Add(this.panel3);
             this.tabPageServ.Controls.Add(this.Serv_dataGridView);
             this.tabPageServ.Location = new System.Drawing.Point(4, 25);
@@ -425,122 +742,105 @@
             this.tabPageServ.TabIndex = 2;
             this.tabPageServ.Text = "Услуги";
             // 
-            // Serv_dataGridView
+            // label26
             // 
-            this.Serv_dataGridView.AllowUserToAddRows = false;
-            this.Serv_dataGridView.AllowUserToDeleteRows = false;
-            this.Serv_dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(250)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Serv_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.Serv_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Serv_dataGridView.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Serv_dataGridView.Location = new System.Drawing.Point(8, 43);
-            this.Serv_dataGridView.Name = "Serv_dataGridView";
-            this.Serv_dataGridView.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Serv_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.Serv_dataGridView.RowHeadersWidth = 51;
-            this.Serv_dataGridView.RowTemplate.Height = 24;
-            this.Serv_dataGridView.Size = new System.Drawing.Size(1055, 320);
-            this.Serv_dataGridView.TabIndex = 3;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label26.Location = new System.Drawing.Point(685, 13);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(65, 20);
+            this.label26.TabIndex = 14;
+            this.label26.Text = "Поиск";
             // 
-            // tabPageDocument
+            // Serv_textBox_Search
             // 
-            this.tabPageDocument.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.tabPageDocument.Controls.Add(this.panel4);
-            this.tabPageDocument.Controls.Add(this.Document_dataGridView);
-            this.tabPageDocument.Location = new System.Drawing.Point(4, 25);
-            this.tabPageDocument.Name = "tabPageDocument";
-            this.tabPageDocument.Size = new System.Drawing.Size(1072, 626);
-            this.tabPageDocument.TabIndex = 3;
-            this.tabPageDocument.Text = "Договоры";
+            this.Serv_textBox_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Serv_textBox_Search.Location = new System.Drawing.Point(756, 10);
+            this.Serv_textBox_Search.Name = "Serv_textBox_Search";
+            this.Serv_textBox_Search.Size = new System.Drawing.Size(307, 27);
+            this.Serv_textBox_Search.TabIndex = 13;
             // 
-            // Document_dataGridView
+            // Serv_button_Clear
             // 
-            this.Document_dataGridView.AllowUserToAddRows = false;
-            this.Document_dataGridView.AllowUserToDeleteRows = false;
-            this.Document_dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(250)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Document_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.Document_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Document_dataGridView.DefaultCellStyle = dataGridViewCellStyle11;
-            this.Document_dataGridView.Location = new System.Drawing.Point(8, 43);
-            this.Document_dataGridView.Name = "Document_dataGridView";
-            this.Document_dataGridView.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Document_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.Document_dataGridView.RowHeadersWidth = 51;
-            this.Document_dataGridView.RowTemplate.Height = 24;
-            this.Document_dataGridView.Size = new System.Drawing.Size(1055, 320);
-            this.Document_dataGridView.TabIndex = 3;
+            this.Serv_button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(133)))), ((int)(((byte)(146)))));
+            this.Serv_button_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Serv_button_Clear.Location = new System.Drawing.Point(669, 373);
+            this.Serv_button_Clear.Name = "Serv_button_Clear";
+            this.Serv_button_Clear.Size = new System.Drawing.Size(188, 42);
+            this.Serv_button_Clear.TabIndex = 12;
+            this.Serv_button_Clear.Text = "Очистить";
+            this.Serv_button_Clear.UseVisualStyleBackColor = false;
             // 
-            // label8
+            // Serv_button_Refresh
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(134, 81);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 20);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "ФИО";
+            this.Serv_button_Refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(133)))), ((int)(((byte)(146)))));
+            this.Serv_button_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Serv_button_Refresh.Location = new System.Drawing.Point(863, 373);
+            this.Serv_button_Refresh.Name = "Serv_button_Refresh";
+            this.Serv_button_Refresh.Size = new System.Drawing.Size(200, 42);
+            this.Serv_button_Refresh.TabIndex = 11;
+            this.Serv_button_Refresh.Text = "Обновить";
+            this.Serv_button_Refresh.UseVisualStyleBackColor = false;
+            this.Serv_button_Refresh.Click += new System.EventHandler(this.Serv_button_Refresh_Click);
             // 
-            // label9
+            // label22
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(119, 109);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 20);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Адрес";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.Location = new System.Drawing.Point(8, 15);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(156, 25);
+            this.label22.TabIndex = 10;
+            this.label22.Text = "Таблица услуг";
             // 
-            // label10
+            // Serv_button_Save
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(17, 137);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(169, 20);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Номер телефона";
+            this.Serv_button_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Serv_button_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Serv_button_Save.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Serv_button_Save.Location = new System.Drawing.Point(669, 569);
+            this.Serv_button_Save.Name = "Serv_button_Save";
+            this.Serv_button_Save.Size = new System.Drawing.Size(394, 45);
+            this.Serv_button_Save.TabIndex = 9;
+            this.Serv_button_Save.Text = "Сохранить";
+            this.Serv_button_Save.UseVisualStyleBackColor = false;
+            // 
+            // Serv_button_Alter
+            // 
+            this.Serv_button_Alter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Serv_button_Alter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Serv_button_Alter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Serv_button_Alter.Location = new System.Drawing.Point(669, 523);
+            this.Serv_button_Alter.Name = "Serv_button_Alter";
+            this.Serv_button_Alter.Size = new System.Drawing.Size(394, 45);
+            this.Serv_button_Alter.TabIndex = 8;
+            this.Serv_button_Alter.Text = "Изменить";
+            this.Serv_button_Alter.UseVisualStyleBackColor = false;
+            // 
+            // Serv_button_Delete
+            // 
+            this.Serv_button_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Serv_button_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Serv_button_Delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Serv_button_Delete.Location = new System.Drawing.Point(669, 477);
+            this.Serv_button_Delete.Name = "Serv_button_Delete";
+            this.Serv_button_Delete.Size = new System.Drawing.Size(394, 45);
+            this.Serv_button_Delete.TabIndex = 7;
+            this.Serv_button_Delete.Text = "Удалить";
+            this.Serv_button_Delete.UseVisualStyleBackColor = false;
+            // 
+            // Serv_button_New
+            // 
+            this.Serv_button_New.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Serv_button_New.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Serv_button_New.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Serv_button_New.Location = new System.Drawing.Point(669, 431);
+            this.Serv_button_New.Name = "Serv_button_New";
+            this.Serv_button_New.Size = new System.Drawing.Size(394, 45);
+            this.Serv_button_New.TabIndex = 6;
+            this.Serv_button_New.Text = "Новая запись";
+            this.Serv_button_New.UseVisualStyleBackColor = false;
+            this.Serv_button_New.Click += new System.EventHandler(this.Serv_button_New_Click);
             // 
             // panel3
             // 
@@ -576,17 +876,178 @@
             // 
             // Serv_textBox_Price
             // 
+            this.Serv_textBox_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Serv_textBox_Price.Location = new System.Drawing.Point(211, 81);
             this.Serv_textBox_Price.Name = "Serv_textBox_Price";
-            this.Serv_textBox_Price.Size = new System.Drawing.Size(413, 22);
+            this.Serv_textBox_Price.Size = new System.Drawing.Size(413, 24);
             this.Serv_textBox_Price.TabIndex = 2;
             // 
             // Serv_textBox_ServiceName
             // 
+            this.Serv_textBox_ServiceName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Serv_textBox_ServiceName.Location = new System.Drawing.Point(211, 53);
             this.Serv_textBox_ServiceName.Name = "Serv_textBox_ServiceName";
-            this.Serv_textBox_ServiceName.Size = new System.Drawing.Size(413, 22);
+            this.Serv_textBox_ServiceName.Size = new System.Drawing.Size(413, 24);
             this.Serv_textBox_ServiceName.TabIndex = 1;
+            // 
+            // Serv_dataGridView
+            // 
+            this.Serv_dataGridView.AllowUserToAddRows = false;
+            this.Serv_dataGridView.AllowUserToDeleteRows = false;
+            this.Serv_dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(250)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle103.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle103.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle103.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle103.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle103.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle103.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle103.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Serv_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle103;
+            this.Serv_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle104.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle104.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle104.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle104.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle104.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle104.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle104.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Serv_dataGridView.DefaultCellStyle = dataGridViewCellStyle104;
+            this.Serv_dataGridView.Location = new System.Drawing.Point(8, 43);
+            this.Serv_dataGridView.Name = "Serv_dataGridView";
+            this.Serv_dataGridView.ReadOnly = true;
+            dataGridViewCellStyle105.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle105.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle105.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle105.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle105.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle105.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle105.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Serv_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle105;
+            this.Serv_dataGridView.RowHeadersWidth = 51;
+            this.Serv_dataGridView.RowTemplate.Height = 24;
+            this.Serv_dataGridView.Size = new System.Drawing.Size(1055, 320);
+            this.Serv_dataGridView.TabIndex = 3;
+            this.Serv_dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Serv_dataGridView_CellClick);
+            // 
+            // tabPageDocument
+            // 
+            this.tabPageDocument.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.tabPageDocument.Controls.Add(this.label27);
+            this.tabPageDocument.Controls.Add(this.Document_textBox_Search);
+            this.tabPageDocument.Controls.Add(this.Document_button_Clear);
+            this.tabPageDocument.Controls.Add(this.Document_button_Refresh);
+            this.tabPageDocument.Controls.Add(this.label23);
+            this.tabPageDocument.Controls.Add(this.Document_button_Save);
+            this.tabPageDocument.Controls.Add(this.Document_button_Alter);
+            this.tabPageDocument.Controls.Add(this.Document_button_Delete);
+            this.tabPageDocument.Controls.Add(this.Document_button_New);
+            this.tabPageDocument.Controls.Add(this.panel4);
+            this.tabPageDocument.Controls.Add(this.Document_dataGridView);
+            this.tabPageDocument.Location = new System.Drawing.Point(4, 25);
+            this.tabPageDocument.Name = "tabPageDocument";
+            this.tabPageDocument.Size = new System.Drawing.Size(1072, 626);
+            this.tabPageDocument.TabIndex = 3;
+            this.tabPageDocument.Text = "Договоры";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.Location = new System.Drawing.Point(685, 13);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(65, 20);
+            this.label27.TabIndex = 14;
+            this.label27.Text = "Поиск";
+            // 
+            // Document_textBox_Search
+            // 
+            this.Document_textBox_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Document_textBox_Search.Location = new System.Drawing.Point(756, 10);
+            this.Document_textBox_Search.Name = "Document_textBox_Search";
+            this.Document_textBox_Search.Size = new System.Drawing.Size(307, 27);
+            this.Document_textBox_Search.TabIndex = 13;
+            // 
+            // Document_button_Clear
+            // 
+            this.Document_button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(133)))), ((int)(((byte)(146)))));
+            this.Document_button_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Document_button_Clear.Location = new System.Drawing.Point(669, 373);
+            this.Document_button_Clear.Name = "Document_button_Clear";
+            this.Document_button_Clear.Size = new System.Drawing.Size(188, 42);
+            this.Document_button_Clear.TabIndex = 12;
+            this.Document_button_Clear.Text = "Очистить";
+            this.Document_button_Clear.UseVisualStyleBackColor = false;
+            // 
+            // Document_button_Refresh
+            // 
+            this.Document_button_Refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(133)))), ((int)(((byte)(146)))));
+            this.Document_button_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Document_button_Refresh.Location = new System.Drawing.Point(863, 373);
+            this.Document_button_Refresh.Name = "Document_button_Refresh";
+            this.Document_button_Refresh.Size = new System.Drawing.Size(200, 42);
+            this.Document_button_Refresh.TabIndex = 11;
+            this.Document_button_Refresh.Text = "Обновить";
+            this.Document_button_Refresh.UseVisualStyleBackColor = false;
+            this.Document_button_Refresh.Click += new System.EventHandler(this.Document_button_Refresh_Click);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.Location = new System.Drawing.Point(8, 15);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(207, 25);
+            this.label23.TabIndex = 10;
+            this.label23.Text = "Таблица договоров";
+            // 
+            // Document_button_Save
+            // 
+            this.Document_button_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Document_button_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Document_button_Save.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Document_button_Save.Location = new System.Drawing.Point(669, 569);
+            this.Document_button_Save.Name = "Document_button_Save";
+            this.Document_button_Save.Size = new System.Drawing.Size(394, 45);
+            this.Document_button_Save.TabIndex = 9;
+            this.Document_button_Save.Text = "Сохранить";
+            this.Document_button_Save.UseVisualStyleBackColor = false;
+            // 
+            // Document_button_Alter
+            // 
+            this.Document_button_Alter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Document_button_Alter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Document_button_Alter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Document_button_Alter.Location = new System.Drawing.Point(669, 523);
+            this.Document_button_Alter.Name = "Document_button_Alter";
+            this.Document_button_Alter.Size = new System.Drawing.Size(394, 45);
+            this.Document_button_Alter.TabIndex = 8;
+            this.Document_button_Alter.Text = "Изменить";
+            this.Document_button_Alter.UseVisualStyleBackColor = false;
+            // 
+            // Document_button_Delete
+            // 
+            this.Document_button_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Document_button_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Document_button_Delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Document_button_Delete.Location = new System.Drawing.Point(669, 477);
+            this.Document_button_Delete.Name = "Document_button_Delete";
+            this.Document_button_Delete.Size = new System.Drawing.Size(394, 45);
+            this.Document_button_Delete.TabIndex = 7;
+            this.Document_button_Delete.Text = "Удалить";
+            this.Document_button_Delete.UseVisualStyleBackColor = false;
+            // 
+            // Document_button_New
+            // 
+            this.Document_button_New.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(250)))), ((int)(((byte)(133)))));
+            this.Document_button_New.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Document_button_New.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Document_button_New.Location = new System.Drawing.Point(669, 431);
+            this.Document_button_New.Name = "Document_button_New";
+            this.Document_button_New.Size = new System.Drawing.Size(394, 45);
+            this.Document_button_New.TabIndex = 6;
+            this.Document_button_New.Text = "Новая запись";
+            this.Document_button_New.UseVisualStyleBackColor = false;
+            this.Document_button_New.Click += new System.EventHandler(this.Document_button_New_Click);
             // 
             // panel4
             // 
@@ -670,72 +1131,121 @@
             // 
             // Document_textBox_DocumentDate
             // 
+            this.Document_textBox_DocumentDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Document_textBox_DocumentDate.Location = new System.Drawing.Point(211, 165);
             this.Document_textBox_DocumentDate.Name = "Document_textBox_DocumentDate";
-            this.Document_textBox_DocumentDate.Size = new System.Drawing.Size(413, 22);
+            this.Document_textBox_DocumentDate.Size = new System.Drawing.Size(413, 24);
             this.Document_textBox_DocumentDate.TabIndex = 5;
             // 
             // Document_textBox_Total
             // 
+            this.Document_textBox_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Document_textBox_Total.Location = new System.Drawing.Point(211, 137);
             this.Document_textBox_Total.Name = "Document_textBox_Total";
-            this.Document_textBox_Total.Size = new System.Drawing.Size(413, 22);
+            this.Document_textBox_Total.Size = new System.Drawing.Size(413, 24);
             this.Document_textBox_Total.TabIndex = 4;
             // 
             // Document_textBox_OrderID
             // 
+            this.Document_textBox_OrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Document_textBox_OrderID.Location = new System.Drawing.Point(211, 109);
             this.Document_textBox_OrderID.Name = "Document_textBox_OrderID";
-            this.Document_textBox_OrderID.Size = new System.Drawing.Size(413, 22);
+            this.Document_textBox_OrderID.Size = new System.Drawing.Size(413, 24);
             this.Document_textBox_OrderID.TabIndex = 3;
             // 
             // Document_textBox_ClientName
             // 
+            this.Document_textBox_ClientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Document_textBox_ClientName.Location = new System.Drawing.Point(211, 81);
             this.Document_textBox_ClientName.Name = "Document_textBox_ClientName";
-            this.Document_textBox_ClientName.Size = new System.Drawing.Size(413, 22);
+            this.Document_textBox_ClientName.Size = new System.Drawing.Size(413, 24);
             this.Document_textBox_ClientName.TabIndex = 2;
             // 
             // Document_textBox_ClientID
             // 
+            this.Document_textBox_ClientID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Document_textBox_ClientID.Location = new System.Drawing.Point(211, 53);
             this.Document_textBox_ClientID.Name = "Document_textBox_ClientID";
-            this.Document_textBox_ClientID.Size = new System.Drawing.Size(413, 22);
+            this.Document_textBox_ClientID.Size = new System.Drawing.Size(413, 24);
             this.Document_textBox_ClientID.TabIndex = 1;
             // 
             // Document_textBox_ID
             // 
+            this.Document_textBox_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Document_textBox_ID.Location = new System.Drawing.Point(211, 25);
             this.Document_textBox_ID.Name = "Document_textBox_ID";
-            this.Document_textBox_ID.Size = new System.Drawing.Size(413, 22);
+            this.Document_textBox_ID.Size = new System.Drawing.Size(413, 24);
             this.Document_textBox_ID.TabIndex = 0;
+            // 
+            // Document_dataGridView
+            // 
+            this.Document_dataGridView.AllowUserToAddRows = false;
+            this.Document_dataGridView.AllowUserToDeleteRows = false;
+            this.Document_dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(250)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle106.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle106.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle106.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle106.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle106.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle106.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle106.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Document_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle106;
+            this.Document_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle107.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle107.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle107.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle107.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle107.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle107.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle107.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Document_dataGridView.DefaultCellStyle = dataGridViewCellStyle107;
+            this.Document_dataGridView.Location = new System.Drawing.Point(8, 43);
+            this.Document_dataGridView.Name = "Document_dataGridView";
+            this.Document_dataGridView.ReadOnly = true;
+            dataGridViewCellStyle108.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle108.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle108.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle108.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle108.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle108.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle108.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Document_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle108;
+            this.Document_dataGridView.RowHeadersWidth = 51;
+            this.Document_dataGridView.RowTemplate.Height = 24;
+            this.Document_dataGridView.Size = new System.Drawing.Size(1055, 320);
+            this.Document_dataGridView.TabIndex = 3;
+            this.Document_dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Document_dataGridView_CellClick);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1079, 652);
+            this.ClientSize = new System.Drawing.Size(1079, 655);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormMain";
             this.Text = "Repair";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageOrders.ResumeLayout(false);
+            this.tabPageOrders.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Orders_dataGridView)).EndInit();
             this.tabPageClient.ResumeLayout(false);
+            this.tabPageClient.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Client_dataGridView)).EndInit();
             this.tabPageServ.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Serv_dataGridView)).EndInit();
-            this.tabPageDocument.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Document_dataGridView)).EndInit();
+            this.tabPageServ.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Serv_dataGridView)).EndInit();
+            this.tabPageDocument.ResumeLayout(false);
+            this.tabPageDocument.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Document_dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -793,6 +1303,43 @@
         private System.Windows.Forms.TextBox Document_textBox_ClientName;
         private System.Windows.Forms.TextBox Document_textBox_ClientID;
         private System.Windows.Forms.TextBox Document_textBox_ID;
+        private System.Windows.Forms.Button Order_button_Refresh;
+        private System.Windows.Forms.Button Order_button_Save;
+        private System.Windows.Forms.Button Order_button_Alter;
+        private System.Windows.Forms.Button Order_button_Delete;
+        private System.Windows.Forms.Button Order_button_New;
+        private System.Windows.Forms.Button Client_button_Save;
+        private System.Windows.Forms.Button Client_button_Alter;
+        private System.Windows.Forms.Button Client_button_Delete;
+        private System.Windows.Forms.Button Client_button_New;
+        private System.Windows.Forms.Button Serv_button_Save;
+        private System.Windows.Forms.Button Serv_button_Alter;
+        private System.Windows.Forms.Button Serv_button_Delete;
+        private System.Windows.Forms.Button Serv_button_New;
+        private System.Windows.Forms.Button Document_button_Save;
+        private System.Windows.Forms.Button Document_button_Alter;
+        private System.Windows.Forms.Button Document_button_Delete;
+        private System.Windows.Forms.Button Document_button_New;
+        private System.Windows.Forms.Button Order_button_Clear;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox Order_textBox_Search;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox Client_textBox_Search;
+        private System.Windows.Forms.Button Client_button_Clear;
+        private System.Windows.Forms.Button Client_button_Refresh;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox Serv_textBox_Search;
+        private System.Windows.Forms.Button Serv_button_Clear;
+        private System.Windows.Forms.Button Serv_button_Refresh;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox Document_textBox_Search;
+        private System.Windows.Forms.Button Document_button_Clear;
+        private System.Windows.Forms.Button Document_button_Refresh;
     }
 }
 

@@ -23,6 +23,7 @@ namespace RepairAPP
     public partial class FormMain : Form
     {
         DataBase dataBase = new DataBase();
+        int SelectedRow;
         public FormMain()
         {
             InitializeComponent();
@@ -132,6 +133,113 @@ namespace RepairAPP
             RefreshDataGrid(Client_dataGridView, ClientQuery, Client);
             RefreshDataGrid(Serv_dataGridView, ServQuery, Serv);
             RefreshDataGrid(Document_dataGridView, DocumentQuery, Document);
+        }
+
+        private void Orders_dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SelectedRow = e.RowIndex;
+
+            if(e.RowIndex >= 0)
+            {
+                DataGridViewRow row = Orders_dataGridView.Rows[SelectedRow];
+
+                Order_textBox_ID.Text = row.Cells[0].Value.ToString();
+                Order_textBox_ClientID.Text = row.Cells[1].Value.ToString();
+                Order_textBox_ServiceName.Text = row.Cells[2].Value.ToString();
+                Order_textBox_Descript.Text = row.Cells[3].Value.ToString();
+                Order_textBox_OrderDate.Text = row.Cells[4].Value.ToString();
+                Order_textBox_Execution.Text = row.Cells[5].Value.ToString();
+                Order_textBox_Progress.Text = row.Cells[6].Value.ToString();
+            }
+        }
+
+        private void Client_dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SelectedRow = e.RowIndex;
+
+            if(e.RowIndex >= 0)
+            {
+                DataGridViewRow row = Client_dataGridView.Rows[SelectedRow];
+
+                Client_textBox_ID.Text = row.Cells[0].Value.ToString();
+                Client_textBox_FullName.Text = row.Cells[1].Value.ToString();
+                Client_textBox_Adress.Text = row.Cells[2].Value.ToString();
+                Client_textBox_Telephone.Text = row.Cells[3].Value.ToString();
+            }
+        }
+
+        private void Serv_dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SelectedRow = e.RowIndex;
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = Serv_dataGridView.Rows[SelectedRow];
+
+                Serv_textBox_ServiceName.Text = row.Cells[0].Value.ToString();
+                Serv_textBox_Price.Text = row.Cells[1].Value.ToString();
+            }
+        }
+
+        private void Document_dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SelectedRow = e.RowIndex;
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = Document_dataGridView.Rows[SelectedRow];
+
+                Document_textBox_ID.Text = row.Cells[0].Value.ToString();
+                Document_textBox_ClientID.Text = row.Cells[1].Value.ToString();
+                Document_textBox_ClientName.Text = row.Cells[2].Value.ToString();
+                Document_textBox_OrderID.Text = row.Cells[3].Value.ToString();
+                Document_textBox_Total.Text = row.Cells[4].Value.ToString();
+                Document_textBox_DocumentDate.Text = row.Cells[5].Value.ToString();
+            }
+        }
+
+        private void Order_button_Refresh_Click(object sender, EventArgs e)
+        {
+            RefreshDataGrid(Orders_dataGridView, OrderQuery, Orders);
+        }
+
+        private void Client_button_Refresh_Click(object sender, EventArgs e)
+        {
+            RefreshDataGrid(Client_dataGridView, ClientQuery, Client);
+        }
+
+        private void Serv_button_Refresh_Click(object sender, EventArgs e)
+        {
+            RefreshDataGrid(Serv_dataGridView, ServQuery, Serv);
+        }
+
+        private void Document_button_Refresh_Click(object sender, EventArgs e)
+        {
+            RefreshDataGrid(Document_dataGridView, DocumentQuery, Document);
+        }
+
+        private void Order_button_New_Click(object sender, EventArgs e)
+        {
+            Orders orders = new Orders();
+            orders.Show();
+        }
+
+        private void Client_button_New_Click(object sender, EventArgs e)
+        {
+            Client client = new Client();
+            client.Show();
+        }
+
+        private void Serv_button_New_Click(object sender, EventArgs e)
+        {
+            Serv serv = new Serv();
+            serv.Show();
+        }
+
+        private void Document_button_New_Click(object sender, EventArgs e)
+        {
+            Document document = new Document();
+            document.Show();
         }
     }
 }
