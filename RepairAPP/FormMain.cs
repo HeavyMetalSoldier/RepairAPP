@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -40,7 +42,7 @@ namespace RepairAPP
             Orders_dataGridView.Columns.Add("Execution", "Срок выполнения");
             Orders_dataGridView.Columns.Add("Progress", "Прогресс");
             Orders_dataGridView.Columns.Add("IsNew", String.Empty);
-                
+
             Client_dataGridView.Columns.Add("ID", "ID клиента");
             Client_dataGridView.Columns.Add("FullName", "ФИО");
             Client_dataGridView.Columns.Add("Adress", "Адрес");
@@ -49,6 +51,7 @@ namespace RepairAPP
 
             Serv_dataGridView.Columns.Add("ServiceName", "Название услуги");
             Serv_dataGridView.Columns.Add("Price", "Цена");
+            Serv_dataGridView.Columns.Add("ID", "ID");
             Serv_dataGridView.Columns.Add("IsNew", String.Empty);
 
             Document_dataGridView.Columns.Add("ID", "Номер договора");
@@ -76,16 +79,17 @@ namespace RepairAPP
                     break;
 
                 case "Client":
-                     dataGrid.Rows.Add(record.GetInt32(0),
-                                      record.GetString(1),
-                                      record.GetString(2),
-                                      record.GetString(3),
-                                      RowState.ModifiedNew);
+                    dataGrid.Rows.Add(record.GetInt32(0),
+                                     record.GetString(1),
+                                     record.GetString(2),
+                                     record.GetString(3),
+                                     RowState.ModifiedNew);
                     break;
 
                 case "Serv":
                     dataGrid.Rows.Add(record.GetString(0),
                                       record.GetDecimal(1),
+                                      record.GetInt32(2),
                                       RowState.ModifiedNew);
                     break;
 
@@ -178,6 +182,7 @@ namespace RepairAPP
 
                 Serv_textBox_ServiceName.Text = row.Cells[0].Value.ToString();
                 Serv_textBox_Price.Text = row.Cells[1].Value.ToString();
+                Serv_textBox_ID.Text = row.Cells[2].Value.ToString();
             }
         }
 
@@ -197,7 +202,7 @@ namespace RepairAPP
                 Document_textBox_DocumentDate.Text = row.Cells[5].Value.ToString();
             }
         }
-
+        
         private void Order_button_Refresh_Click(object sender, EventArgs e)
         {
             RefreshDataGrid(Orders_dataGridView, OrderQuery, Orders);
@@ -216,6 +221,42 @@ namespace RepairAPP
         private void Document_button_Refresh_Click(object sender, EventArgs e)
         {
             RefreshDataGrid(Document_dataGridView, DocumentQuery, Document);
+        }
+
+        private void Order_button_Clear_Click(object sender, EventArgs e)
+        {
+            Order_textBox_ID.Text = "";
+            Order_textBox_ClientID.Text = "";
+            Order_textBox_ServiceName.Text = "";
+            Order_textBox_Descript.Text = "";
+            Order_textBox_OrderDate.Text = "";
+            Order_textBox_Execution.Text = "";
+            Order_textBox_Progress.Text = "";
+        }
+
+        private void Client_button_Clear_Click(object sender, EventArgs e)
+        {
+            Client_textBox_ID.Text = "";
+            Client_textBox_FullName.Text = "";
+            Client_textBox_Adress.Text = "";
+            Client_textBox_Telephone.Text = "";
+        }
+
+        private void Serv_button_Clear_Click(object sender, EventArgs e)
+        {
+            Serv_textBox_ServiceName.Text = "";
+            Serv_textBox_Price.Text = "";
+            Serv_textBox_ID.Text = "";
+        }
+
+        private void Document_button_Clear_Click(object sender, EventArgs e)
+        {
+            Document_textBox_ID.Text = "";
+            Document_textBox_ClientID.Text = "";
+            Document_textBox_ClientName.Text = "";
+            Document_textBox_OrderID.Text = "";
+            Document_textBox_Total.Text = "";
+            Document_textBox_DocumentDate.Text = "";
         }
 
         private void Order_button_New_Click(object sender, EventArgs e)
@@ -240,6 +281,213 @@ namespace RepairAPP
         {
             Document document = new Document();
             document.Show();
+        }
+
+        private void Search(DataGridView dataGrid, string SearchQuery, string tablename)
+        {
+            dataGrid.Rows.Clear();  
+
+            SqlCommand command = new SqlCommand(SearchQuery, dataBase.getConnection());
+
+            dataBase.openConnection();
+
+            SqlDataReader read = command.ExecuteReader();
+
+            while(read.Read())
+            {
+                ReadSingleRow(dataGrid, read, tablename);
+            }
+
+            read.Close();
+        }
+
+        private void Order_textBox_Search_TextChanged(object sender, EventArgs e)
+        {
+            string OrderSearch = $"select * from Orders where concat" +
+                             $"(ID, ClientID, ServiceName, Descript, OrderDate, Execution, Progress)" +
+                             $"like '%" + Order_textBox_Search.Text + "%'";
+
+            Search(Orders_dataGridView, OrderSearch, Orders);
+        }
+
+        private void Client_textBox_Search_TextChanged(object sender, EventArgs e)
+        {
+            string ClientSearch = $"select * from Client where concat" +
+                                  $"(ID, FullName, Adress, Telephone)" +
+                                  $"like '%" + Client_textBox_Search.Text + "%'";
+
+            Search(Client_dataGridView, ClientSearch, Client);
+        }
+
+        private void Serv_textBox_Search_TextChanged(object sender, EventArgs e)
+        {
+            string ServSearch = $"select * from Serv where concat" +
+                                $"(ServiceName, Price, ID) like '%" + Serv_textBox_Search.Text + "%'";
+
+            Search(Serv_dataGridView, ServSearch, Serv);
+        }
+
+        private void Document_textBox_Search_TextChanged(object sender, EventArgs e)
+        {
+            string DocumentSearch = $"select * from Document where concat" +
+                                    $"(ID, ClientID, ClientName, OrderID, Total, DocumentDate)" +
+                                    $"like '%" + Document_textBox_Search.Text + "%'";
+
+            Search(Document_dataGridView, DocumentSearch, Document);
+        }
+
+        int OrderIndex = 7;
+        int ClientIndex = 4;
+        int ServIndex = 3;
+        int DocumentIndex = 6;
+
+        string OrderDelete = $"delete from Orders ";
+        string ClientDelete = $"delete from Client ";
+        string ServDelete = $"delete from Serv ";
+        string DocumentDelete = $"delete from Document ";
+
+        private void OrderAlterIndex(int index)
+        { 
+            var ID = Orders_dataGridView.Rows[index].Cells[0].Value.ToString();
+            var ClientID = Orders_dataGridView.Rows[index].Cells[1].Value.ToString();
+            var ServiceName = Orders_dataGridView.Rows[index].Cells[2].Value.ToString();
+            var Descript = Orders_dataGridView.Rows[index].Cells[3].Value.ToString();
+            var OrderDate = Orders_dataGridView.Rows[index].Cells[4].Value.ToString();
+            var Execution = Orders_dataGridView.Rows[index].Cells[5].Value.ToString();
+            var Progress = Orders_dataGridView.Rows[index].Cells[6].Value.ToString();
+
+            var OrderAlterQuery = $"update Orders set " +
+                                  $"ClientID = '{ClientID}'," +
+                                  $"ServiceName = '{ServiceName}'," +
+                                  $"Descript = '{Descript}'," +
+                                  $"Execution = '{Execution}'," +
+                                  $"Progress = '{Progress}' where ID = '{ID}'";
+
+            SqlCommand command = new SqlCommand(OrderAlterQuery, dataBase.getConnection());
+            command.ExecuteNonQuery();
+        }
+
+        private void Update(DataGridView dataGrid, int tableindex, string deleteQuery, string table)
+        {
+            dataBase.openConnection();
+
+            for (int index = 0; index < dataGrid.Rows.Count; index++)
+            {
+                var rowState = (RowState)dataGrid.Rows[index].Cells[tableindex].Value;
+
+                if (rowState == RowState.Existed) continue;
+
+                if (rowState == RowState.Deleted)
+                {
+                    var id = Convert.ToInt32(dataGrid.Rows[index].Cells[0].Value);
+                    string query = deleteQuery + $"where ID = {id}";
+
+                    SqlCommand command = new SqlCommand(query, dataBase.getConnection());
+                    command.ExecuteNonQuery();
+                }
+
+                if(rowState == RowState.Modified)
+                {
+                    switch (table)
+                    {
+                        case "Orders":
+                            OrderAlterIndex(index);
+                            break;
+                    }
+                }
+                
+                
+            }
+
+            dataBase.closeConnection();
+        }
+
+        private void DeleteRow(DataGridView dataGrid, int tableindex)
+        {
+            var index = dataGrid.CurrentCell.RowIndex;
+
+            dataGrid.Rows[index].Visible= false;
+
+            if (dataGrid.Rows[index].Cells[0].Value.ToString() == string.Empty)
+            {
+                dataGrid.Rows[index].Cells[tableindex].Value = RowState.Deleted;
+                return;
+            }
+
+            dataGrid.Rows[index].Cells[tableindex].Value = RowState.Deleted;
+        }
+
+        private void Order_button_Delete_Click(object sender, EventArgs e)
+        {
+            DeleteRow(Orders_dataGridView, OrderIndex);
+        }
+
+        private void Order_button_Save_Click(object sender, EventArgs e)
+        {
+            Update(Orders_dataGridView, OrderIndex, OrderDelete, Orders);
+        }
+
+        private void Client_button_Delete_Click(object sender, EventArgs e)
+        {
+            DeleteRow(Client_dataGridView, ClientIndex);
+        }
+
+        private void Client_button_Save_Click(object sender, EventArgs e)
+        {
+            Update(Client_dataGridView, ClientIndex, ClientDelete, Client);
+        }
+
+        private void Serv_button_Delete_Click(object sender, EventArgs e)
+        {
+            DeleteRow(Serv_dataGridView, ServIndex);
+        }
+
+        private void Serv_button_Save_Click(object sender, EventArgs e)
+        {
+            Update(Serv_dataGridView, ServIndex, ServDelete, Serv);
+        }
+
+        private void Document_button_Delete_Click(object sender, EventArgs e)
+        {
+            DeleteRow(Document_dataGridView, DocumentIndex);
+        }
+
+        private void Document_button_Save_Click(object sender, EventArgs e)
+        {
+            Update(Document_dataGridView, DocumentIndex, DocumentDelete, Document);
+        }
+
+        private void Order_button_Alter_Click(object sender, EventArgs e)
+        {
+            var selectedRowIndex = Orders_dataGridView.CurrentCell.RowIndex;
+
+            var ID = Order_textBox_ID.Text;
+            var ClientID = Order_textBox_ClientID.Text;
+            var ServiceName = Order_textBox_ServiceName.Text;
+            var Descript = Order_textBox_Descript.Text;
+            var OrderDate = Order_textBox_OrderDate.Text;
+            var Execution = Order_textBox_Execution.Text;
+            var Progress = Order_textBox_Progress.Text;
+
+            if (Orders_dataGridView.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
+            {
+                if(ClientID.Equals("") &&
+               ServiceName.Equals("") &&
+               Descript.Equals("") &&
+               Execution.Equals("") &&
+               Progress.Equals(""))
+                {
+                    MessageBox.Show("Запись не может быть сохранена, т.к. отсутствуют значения в некоторых полях",
+                    "ОШИБКА!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    Orders_dataGridView.Rows[selectedRowIndex].SetValues(ID, ClientID, ServiceName, Descript, OrderDate, Execution, Progress);
+                    Orders_dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                }
+            }
         }
     }
 }

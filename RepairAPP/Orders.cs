@@ -57,8 +57,16 @@ namespace RepairAPP
                 this.Close();
             }
                 
+            dataBase.closeConnection();
+        }
 
-            
+        private void button_Clear_Click(object sender, EventArgs e)
+        {
+            textBox_ClientID.Text = "";
+            textBox_ServiceName.Text = "";
+            textBox_Description.Text = "";
+            textBox_Execution.Text = "";
+            textBox_Progress.Text = "";
         }
     }
 }

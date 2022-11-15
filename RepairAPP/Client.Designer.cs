@@ -61,6 +61,7 @@
             this.button_Clear.TabIndex = 29;
             this.button_Clear.Text = "Очистить";
             this.button_Clear.UseVisualStyleBackColor = false;
+            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click);
             // 
             // label4
             // 
