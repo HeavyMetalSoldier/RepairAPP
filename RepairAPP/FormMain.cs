@@ -367,6 +367,56 @@ namespace RepairAPP
             command.ExecuteNonQuery();
         }
 
+        private void ClientAlterIndex(int index)
+        {
+            var ID = Client_dataGridView.Rows[index].Cells[0].Value.ToString();
+            var FullName = Client_dataGridView.Rows[index].Cells[1].Value.ToString();
+            var Adress = Client_dataGridView.Rows[index].Cells[2].Value.ToString();
+            var Telephone = Client_dataGridView.Rows[index].Cells[3].Value.ToString();
+
+            var ClientAlterQuery = $"update Client set " +
+                                   $"FullName = '{FullName}'," +
+                                   $"Adress = '{Adress}'," +
+                                   $"Telephone = '{Telephone}' where ID = '{ID}'";
+            
+            SqlCommand command = new SqlCommand(ClientAlterQuery, dataBase.getConnection());
+            command.ExecuteNonQuery();
+        }
+
+        private void ServAlterIndex(int index)
+        {
+            var ServiceName = Serv_dataGridView.Rows[index].Cells[0].Value.ToString();
+            var Price = Serv_dataGridView.Rows[index].Cells[1].Value.ToString();
+            var ID = Serv_dataGridView.Rows[index].Cells[2].Value.ToString();
+
+            var ServAlterQuery = $"update Serv set " +
+                                 $"ServiceName = '{ServiceName}'," +
+                                 $"Price = '{Price}' where ID = '{ID}'";
+
+            SqlCommand command = new SqlCommand(ServAlterQuery, dataBase.getConnection());
+            command.ExecuteNonQuery();
+        }
+
+        private void DocumentAlterIndex(int index)
+        {
+            var ID = Document_dataGridView.Rows[index].Cells[0].Value.ToString();
+            var ClientID = Document_dataGridView.Rows[index].Cells[1].Value.ToString();
+            var ClientName = Document_dataGridView.Rows[index].Cells[2].Value.ToString();
+            var OrderID = Document_dataGridView.Rows[index].Cells[3].Value.ToString();
+            var Total = Document_dataGridView.Rows[index].Cells[4].Value.ToString();
+            var DocumentDate = Document_dataGridView.Rows[index].Cells[5].Value.ToString();
+
+            var DocumentAlterQuery = $"update Document set " +
+                                     $"ClientID = '{ClientID}'," +
+                                     $"ClientName = '{ClientName}'," +
+                                     $"OrderID = '{OrderID}'," +
+                                     $"Total = '{Total}'" +
+                                     $"where ID = '{ID}'";
+
+            SqlCommand command = new SqlCommand(DocumentAlterQuery, dataBase.getConnection());
+            command.ExecuteNonQuery();
+        }
+
         private void Update(DataGridView dataGrid, int tableindex, string deleteQuery, string table)
         {
             dataBase.openConnection();
@@ -393,6 +443,15 @@ namespace RepairAPP
                         case "Orders":
                             OrderAlterIndex(index);
                             break;
+                        case "Client":
+                            ClientAlterIndex(index);
+                            break;
+                        case "Serv":
+                            ServAlterIndex(index);
+                            break;
+                        case "Document":
+                            break;
+                        
                     }
                 }
                 
@@ -486,6 +545,95 @@ namespace RepairAPP
                 {
                     Orders_dataGridView.Rows[selectedRowIndex].SetValues(ID, ClientID, ServiceName, Descript, OrderDate, Execution, Progress);
                     Orders_dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                }
+            }
+        }
+
+        private void Client_button_Alter_Click(object sender, EventArgs e)
+        {
+            var selectedRowIndex = Client_dataGridView.CurrentCell.RowIndex;
+
+            var ID = Client_textBox_ID.Text;
+            var FullName = Client_textBox_FullName.Text;
+            var Adress = Client_textBox_Adress.Text;
+            var Telephone = Client_textBox_Telephone.Text;
+
+            if (Client_dataGridView.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
+            {
+                if (ID.Equals("") &&
+               FullName.Equals("") &&
+               Adress.Equals("") &&
+               Telephone.Equals(""))
+                {
+                    MessageBox.Show("Запись не может быть сохранена, т.к. отсутствуют значения в некоторых полях",
+                    "ОШИБКА!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    Client_dataGridView.Rows[selectedRowIndex].SetValues(ID, FullName, Adress, Telephone);
+                    Client_dataGridView.Rows[selectedRowIndex].Cells[4].Value = RowState.Modified;
+                }
+            }
+        }
+
+        private void Serv_button_Alter_Click(object sender, EventArgs e)
+        {
+            var selectedRowIndex = Serv_dataGridView.CurrentCell.RowIndex;
+
+            var ServiceName = Serv_textBox_ServiceName.Text;
+            var Price = Serv_textBox_Price.Text;
+            var ID = Serv_textBox_ID.Text;
+
+            if (Serv_dataGridView.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
+            {
+                if (ServiceName.Equals("") &&
+                    Price.Equals("") &&
+                    ID.Equals(""))
+                {
+                    MessageBox.Show("Запись не может быть сохранена, т.к. отсутствуют значения в некоторых полях",
+                    "ОШИБКА!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    Serv_dataGridView.Rows[selectedRowIndex].SetValues(ServiceName, Price, ID);
+                    Serv_dataGridView.Rows[selectedRowIndex].Cells[3].Value = RowState.Modified;
+                }
+            }
+        }
+
+        private void Document_button_Alter_Click(object sender, EventArgs e)
+        {
+            var selectedRowIndex = Document_dataGridView.CurrentCell.RowIndex;
+
+            var ID = Document_textBox_ID.Text;
+            var ClientID = Document_textBox_ClientID.Text;
+            var ClientName = Document_textBox_ClientName.Text;
+            var OrderID = Document_textBox_OrderID.Text;
+            var Total = Document_textBox_Total.Text;
+            var DocumentDate = Document_textBox_DocumentDate.Text;
+
+            if (Document_dataGridView.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
+            {
+                if (ID.Equals("")&&
+                    ClientID.Equals("") &&
+                    ClientName.Equals("")&&
+                    OrderID.Equals("")&&
+                    Total.Equals("")&&
+                    DocumentDate.Equals(""))
+                {
+                    MessageBox.Show("Запись не может быть сохранена, т.к. отсутствуют значения в некоторых полях",
+                    "ОШИБКА!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    Document_dataGridView.Rows[selectedRowIndex].SetValues(ID, ClientID, ClientName, OrderID, Total, DocumentDate);
+                    Document_dataGridView.Rows[selectedRowIndex].Cells[6].Value = RowState.Modified;
                 }
             }
         }
