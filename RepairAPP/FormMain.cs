@@ -637,5 +637,18 @@ namespace RepairAPP
                 }
             }
         }
+
+        private void button_Exit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы уверены, что хотите выйти? Несохраненные данные будут потеряны.", "Выход", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Close();
+                Application.Exit();
+            }
+            else
+            {
+                this.Show();
+            }
+        }
     }
 }

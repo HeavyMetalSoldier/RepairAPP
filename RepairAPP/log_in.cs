@@ -55,8 +55,7 @@ namespace RepairAPP
                 MessageBox.Show("Вы успешно вошли");
                 FormMain formMain = new FormMain();
                 this.Hide();
-                formMain.ShowDialog();
-                this.Show();
+                formMain.ShowDialog();               
             }
             else
             {
