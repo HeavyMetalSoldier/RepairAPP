@@ -450,6 +450,7 @@ namespace RepairAPP
                             ServAlterIndex(index);
                             break;
                         case "Document":
+                            DocumentAlterIndex(index);
                             break;
                         
                     }
