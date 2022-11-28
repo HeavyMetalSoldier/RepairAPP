@@ -63,6 +63,7 @@ namespace RepairAPP
             Document_dataGridView.Columns.Add("IsNew", String.Empty);
         }
 
+
         private void ReadSingleRow(DataGridView dataGrid, IDataRecord record, string tablename)
         {
             switch (tablename)
@@ -105,10 +106,12 @@ namespace RepairAPP
             }
         }
 
+        
         string OrderQuery = $"select * from Orders";
         string ClientQuery = $"select * from Client";
         string ServQuery = $"select * from Serv";
         string DocumentQuery = $"select * from Document";
+        
         string Orders = "Orders";
         string Client = "Client";
         string Serv = "Serv";
