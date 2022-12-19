@@ -9,7 +9,7 @@ namespace RepairAPP
 {
     internal class DataBase
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source =DESKTOP-6GQJ2JJ;Initial Catalog=Repair;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source =DESKTOP-K8JPQHE\SQLEXPRESS;Initial Catalog=Repair;Integrated Security=True");
 
         public void openConnection()
         {
